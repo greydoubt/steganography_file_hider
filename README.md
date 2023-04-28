@@ -61,13 +61,13 @@ Python Version
 
 To embed a file into an image using the Python version, run the following command:
 
-python embed.py image_file file_to_embed
+*python embed.py image_file file_to_embed*
 
 This will create a modified image file with the embedded data.
 
 To extract a file from the modified image using the Python version, run the following command:
 
-python extract.py embedded_image_file extracted_file
+*python extract.py embedded_image_file extracted_file*
 
 This will extract the embedded file and save it to a new file.
 C++ Version
@@ -76,42 +76,33 @@ To build the C++ version of the steganography application, follow these steps:
 
     Clone the repository:
 
-    bash
-
-git clone https://github.com/username/steganography.git
+*clone https://github.com/username/steganography.git*
 
 Create a build directory and navigate into it:
 
-bash
-
-mkdir build && cd build
+*mkdir build && cd build
 
 Generate the Makefile using CMake:
 
-cmake ..
+*cmake ..*
 
 Build the application using Make:
 
-go
-
-    make
+*make*
 
 To embed a file into an image using the C++ version, run the following command:
 
-bash
-
-./embed image_file file_to_embed
+*./embed image_file file_to_embed*
 
 This will create a modified image file with the embedded data.
 
 To extract a file from the modified image using the C++ version, run the following command:
 
-bash
-
-./extract embedded_image_file extracted_file
+*./extract embedded_image_file extracted_file*
 
 This will extract the embedded file and save it to a new file.
-Limitations
+
+**Limitations**
 
 The maximum file size that can be embedded depends on the size of the image. The application checks if the file can fit into the image before embedding it. If the file is too big to embed, an error message will be displayed.
 Example
